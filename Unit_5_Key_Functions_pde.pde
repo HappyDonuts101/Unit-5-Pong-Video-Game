@@ -9,6 +9,7 @@ final int INTRO = 0;
 final int GAME = 1;
 final int PAUSE = 2;
 int GAMEOVER = 3;
+final float MAX_BALL_SPEED = 15;  // Maximum speed the ball can reach
 
 
 // Player variables
@@ -23,21 +24,21 @@ float ballx, bally, balld;
 float vx, vy; 
 
 void setup() {
-  size(600, 600, P2D);
+  size(1300, 1200, P2D);
 
   // Initialize player positions
-  p1x = 50;
+  p1x = 75;  
   p1y = height / 2;
-  p1d = 100;
+  p1d = 150;  
 
-  p2x = width - 50;
+  p2x = width - 75;  
   p2y = height / 2;
-  p2d = 100;
+  p2d = 150;  
 
   // Initialize ball position and velocity
   ballx = width / 2;
   bally = height / 2;
-  balld = 50;
+  balld = 80;  
 
   vx = 3;
   vy = 5;
