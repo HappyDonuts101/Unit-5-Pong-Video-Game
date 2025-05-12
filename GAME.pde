@@ -1,3 +1,7 @@
+void gameClicks() {
+  mode=GAME;
+}
+
 void game() {
   // Setup frame
   background(255);
