@@ -34,6 +34,11 @@ circle(ballx, bally, balld);
    if(bally>=height) vy = vy *-15;
    if(ballx<=0) vx = vx *-15;
    if(ballx>=width) vx = vx *-15;
+   
+  if (dist(paddleX, paddleY, ballx, bally) <= paddleWidth/2 + balld/2) {
+    
+    
+  }
  
 }void mousePressed() {
   if (mode == INTRO) {
