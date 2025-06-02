@@ -9,6 +9,5 @@ void keyReleased() {
  if (key == 'a' || key == 'A') akey = false; 
    if (key == 'd' || key == 'D') dkey = false;
    if (keyCode == LEFT) leftkey = false;
-  if (keyCode == RIGHT) rightkey = false;
-  
+  if (keyCode == RIGHT) rightkey = false; 
 }
