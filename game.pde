@@ -3,9 +3,16 @@ fill(255);
   arc(paddleX, paddleY, paddleWidth, paddleHeight, PI, TWO_PI, CHORD); 
   
   if (keyPressed) {
-    if (keyCode == LEFT) paddleX -= 7;
-    if (keyCode == RIGHT) paddleX += 7;
+    if (keyCode == LEFT) paddleX -= 8;
+    if (keyCode == RIGHT) paddleX += 8;
   }
+  
+  //BRICKS==============================================
+  circle(x[0],y[0],100);
+ circle(x[1],y[1],100);
+ circle(x[2],y[2],100);
+  
+  
   
   paddleX = constrain(paddleX, paddleWidth/2, width-paddleWidth/2);
  //Paddle
@@ -30,9 +37,9 @@ circle(ballx, bally, balld);
    ballx= ballx + vx;
    bally= bally+vy;
   
-  if(bally<=0) vy = vy *-15;
-   if(ballx<=0) vx = vx *-15;
-   if(ballx>=width) vx = vx *-15;
+  if(bally<=0) vy = vy *-8;
+   if(ballx<=0) vx = vx *-8;
+   if(ballx>=width) vx = vx *-8;
    
 // Paddle collision with ball
 if (dist(paddleX, paddleY, ballx, bally) <= paddleWidth/2 + balld/2) {
