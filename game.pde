@@ -8,9 +8,22 @@ fill(255);
   }
   
   //BRICKS==============================================
-  circle(x[0],y[0],100);
- circle(x[1],y[1],100);
- circle(x[2],y[2],100);
+//  circle(x[0],y[0],brickd);
+ //circle(x[1],y[1],brickd);
+ //circle(x[2],y[2],brickd);
+  
+  int i = 0;
+  while(i<n) {
+    circle(x[i],y[i],brickd);
+     if(dist(ballx,bally,x[i],y[i]) < balld/2 + paddleWidth/2) {
+   vx=(ballx-x[i])/10;
+   vy=(bally-y[i])/10;
+  }
+    i= i+1;
+    
+  }
+  
+ 
   
   
   
