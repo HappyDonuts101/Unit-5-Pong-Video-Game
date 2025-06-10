@@ -93,9 +93,9 @@ if (ballx <= 0 || ballx >= width) vx *= -1;
 
 void resetBall() {
   ballx = width/2;
-  bally = height/2;
+  bally = paddleY - 150; // Start higher above paddle
   vx = random(-3, 3);
-  vy = 4;
+  vy = 4; // Moderate initial speed
 }
 
 void mousePressed() {
